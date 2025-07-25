@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Connexion - Mode Match DZ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+ <!-- === ÉCRAN DE CONNEXION === -->
+ <div class="login-hero" id="loginPage">
+    <div class="photo-overlay"></div>
+    <div class="hero-text-left">
+      <h2><span class="zineta-color">Log in</span> to see your outfit</h2>
+    </div>
+    <div class="login-overlay">
+      <div class="login-box artistic-shadow">
+        <h1>Welcome to <span>Zineta</span></h1>
+        <form onsubmit="return verifierConnexion()">
+            <label class="form-label">Email</label>
+            <input type="text" id="email" placeholder="Your email" required>
+          
+            <label class="form-label">Mot de passe</label>
+            <input type="password" id="password" placeholder="Your password" required>
+          
+            <small class="confidential-text">🔐 Your information stays private</small>
+          
+            <button type="submit">Se connecter</button>
+          </form>
+          
+      </div>
+    </div>
+  </div>
+  <select onchange="changerLangue(this.value)">
+    <option value="fr">🇫🇷 Français</option>
+    <option value="ar">🇩🇿 Arabe</option>
+    <option value="en">🇬🇧 English</option>
+  </select>
+  
+  <script src="script.js" src="lang.js"></script>
+
+  </body>
+  
+</html>
